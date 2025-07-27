@@ -224,25 +224,6 @@ Submits a new job application.
 - Phone must be exactly 10 digits
 - LinkedIn URL must contain `linkedin.com/in/`
 
-## 🎯 Assignment Requirements Fulfilled
 
-- ✅ Responsive form with all required fields
-- ✅ Client-side and server-side validation
-- ✅ File upload with size and type restrictions
-- ✅ PostgreSQL database integration
-- ✅ Next.js API routes implementation
-- ✅ TypeScript and Tailwind CSS usage
-- ✅ Resume file storage in local directory
-- ✅ Professional UI/UX design
 
-## 📄 License
 
-This project is created as part of a software development internship assignment.
-
-## 👨‍💻 Author
-
-**GitHub**: [@Azaz176](https://github.com/Azaz176)
-
----
-
-*This project demonstrates full-stack web development skills using modern technologies and best practices.*
