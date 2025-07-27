@@ -197,32 +197,8 @@ Submits a new job application.
 4. Click "Submit" to submit your application
 5. Receive confirmation message upon successful submission
 
-## 🛡️ Security Features
 
-- Server-side validation for all inputs
-- File type and size restrictions
-- Filename sanitization for uploaded files
-- SQL injection prevention via Prisma ORM
-- Duplicate submission prevention (email and phone)
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Database Connection Error**
-- Verify PostgreSQL is running
-- Check DATABASE_URL in `.env.local`
-- Ensure database exists
-
-**File Upload Issues**
-- Check if `resumes/` directory exists and is writable
-- Verify file size is under 5MB
-- Ensure file is PDF or DOCX format
-
-**Form Validation Errors**
-- Email must be valid format
-- Phone must be exactly 10 digits
-- LinkedIn URL must contain `linkedin.com/in/`
 
 
 
