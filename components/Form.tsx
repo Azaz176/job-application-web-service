@@ -23,9 +23,9 @@ export default function Form() {
     const fullName = formData.get('fullName') as string;
     const email = formData.get('email') as string;
     const phone = formData.get('phone') as string;
-    const file = selectedFile; // Use state instead of FormData for file
+    const file = selectedFile; 
 
-    // ✅ Client-side validations
+    // Client-side validations
     if (!fullName.trim()) {
       return setStatus('Full Name is required.');
     }
@@ -48,7 +48,7 @@ export default function Form() {
     // Add file to formData
     formData.set('resume', file);
 
-    // ✅ Submit if validation passes
+    // Submit if validation passes
     setStatus('Submitting...');
     try {
       const res = await fetch('/api/apply', {
@@ -111,7 +111,7 @@ export default function Form() {
         className="border border-gray-300 p-2 w-full rounded"
       />
 
-      {/* 🎨 STYLED FILE INPUT */}
+      {/* STYLED FILE INPUT */}
       <div className="space-y-2">
         <label className="block text-sm font-medium text-gray-700">
           Resume (PDF or DOCX, max 5MB)
