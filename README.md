@@ -13,7 +13,7 @@ A full-stack web application that allows job applicants to submit their details 
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Next.js 13+ with TypeScript
+- **Frontend**: Next.js with TypeScript
 - **Styling**: Tailwind CSS
 - **Backend**: Next.js API Routes
 - **Database**: PostgreSQL
@@ -26,7 +26,7 @@ A full-stack web application that allows job applicants to submit their details 
 Before running this project, make sure you have the following installed:
 
 - Node.js (version 14 or higher)
-- npm or yarn
+- npm
 - PostgreSQL database
 - Git
 
@@ -46,13 +46,13 @@ yarn install
 ```
 
 ### 3. Environment Setup
-Create a `.env.local` file in the root directory and add your database connection string:
+Create a `.env` file in the root directory and add your database connection string:
 
 ```env
-DATABASE_URL="postgresql://username:password@localhost:5432/job_applications"
+DATABASE_URL="postgresql://username:password@localhost:5432/job-app"
 ```
 
-Replace `username`, `password`, and `job_applications` with your PostgreSQL credentials and desired database name.
+Replace `username`, `password`, and `job-app` with your PostgreSQL credentials and desired database name.
 
 ### 4. Database Setup
 
@@ -65,11 +65,6 @@ CREATE DATABASE job_applications;
 ```bash
 npx prisma generate
 npx prisma db push
-```
-
-#### (Optional) View your database
-```bash
-npx prisma studio
 ```
 
 ### 5. Create upload directory
